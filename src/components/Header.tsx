@@ -10,7 +10,7 @@ export const Header = () => {
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
             <div className="text-2xl font-bold text-white">
-              Doc<span className="text-purple-400">Gen</span>
+              Doc<span className="text-cyan-400">Gen</span>
             </div>
           </div>
 
@@ -36,7 +36,7 @@ export const Header = () => {
             <button className="text-slate-300 hover:text-white transition-colors">
               Sign In
             </button>
-            <button className="bg-purple-600 hover:bg-purple-700 text-white px-6 py-2 rounded-lg font-medium transition-colors">
+            <button className="bg-cyan-500 hover:bg-cyan-600 text-white px-6 py-2 rounded-lg font-medium transition-colors">
               Get Started
             </button>
           </div>
@@ -73,7 +73,7 @@ export const Header = () => {
                 <button className="text-slate-300 hover:text-white transition-colors mb-2 block">
                   Sign In
                 </button>
-                <button className="bg-purple-600 hover:bg-purple-700 text-white px-6 py-2 rounded-lg font-medium transition-colors">
+                <button className="bg-cyan-500 hover:bg-cyan-600 text-white px-6 py-2 rounded-lg font-medium transition-colors">
                   Get Started
                 </button>
               </div>

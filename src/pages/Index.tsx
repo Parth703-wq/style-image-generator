@@ -14,7 +14,7 @@ const Index = () => {
       <main className="container mx-auto px-4 py-16">
         <div className="text-center mb-12">
           <h1 className="text-5xl font-bold text-white mb-4">
-            Generate documentation <span className="text-purple-400">instantly</span>
+            Generate documentation <span className="text-cyan-400">instantly</span>
           </h1>
           <p className="text-xl text-slate-400 max-w-2xl mx-auto">
             Paste your JavaScript, React, or any code below and get instant documentation generation with AI-powered analysis
@@ -27,7 +27,7 @@ const Index = () => {
               onClick={() => setActiveMode('manual')}
               className={`px-6 py-2 rounded-md font-medium transition-all duration-200 ${
                 activeMode === 'manual'
-                  ? 'bg-purple-600 text-white shadow-lg'
+                  ? 'bg-cyan-500 text-white shadow-lg'
                   : 'text-slate-400 hover:text-white'
               }`}
             >
@@ -37,7 +37,7 @@ const Index = () => {
               onClick={() => setActiveMode('github')}
               className={`px-6 py-2 rounded-md font-medium transition-all duration-200 flex items-center gap-2 ${
                 activeMode === 'github'
-                  ? 'bg-purple-600 text-white shadow-lg'
+                  ? 'bg-cyan-500 text-white shadow-lg'
                   : 'text-slate-400 hover:text-white'
               }`}
             >
