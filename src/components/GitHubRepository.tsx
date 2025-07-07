@@ -33,12 +33,12 @@ export const GitHubRepository = () => {
   };
 
   return (
-    <div className="bg-slate-800 rounded-xl p-8 shadow-xl">
+    <div className="bg-slate-800/50 backdrop-blur-sm rounded-xl p-8 shadow-xl border border-slate-700">
       <div className="flex items-center justify-between mb-6">
         <h2 className="text-2xl font-semibold text-white">GitHub Repository Analysis</h2>
         <button
           onClick={handleGenerate}
-          className="bg-cyan-500 hover:bg-cyan-600 text-white px-6 py-2 rounded-lg font-medium transition-colors"
+          className="bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white px-6 py-2 rounded-lg font-medium transition-all"
         >
           Generate Documentation
         </button>
@@ -54,12 +54,12 @@ export const GitHubRepository = () => {
             value={repositoryUrl}
             onChange={(e) => setRepositoryUrl(e.target.value)}
             placeholder="https://github.com/username/repository"
-            className="w-full bg-slate-700 border border-slate-600 rounded-lg px-4 py-3 text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:border-transparent transition-all"
+            className="w-full bg-slate-700/50 border border-slate-600 rounded-lg px-4 py-3 text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all"
           />
         </div>
 
         <div className="flex items-center justify-center">
-          <span className="text-slate-400 bg-slate-700 px-3 py-1 rounded-full text-sm">OR</span>
+          <span className="text-slate-400 bg-slate-700/50 px-3 py-1 rounded-full text-sm">OR</span>
         </div>
 
         <div>
@@ -69,7 +69,7 @@ export const GitHubRepository = () => {
           <div
             className={`border-2 border-dashed rounded-xl p-12 text-center transition-all ${
               dragActive
-                ? 'border-cyan-400 bg-cyan-400/10'
+                ? 'border-purple-400 bg-purple-400/10'
                 : 'border-slate-600 hover:border-slate-500'
             }`}
             onDragEnter={handleDrag}

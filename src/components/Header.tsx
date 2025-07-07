@@ -5,12 +5,12 @@ export const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   return (
-    <header className="bg-slate-800/50 backdrop-blur-sm border-b border-slate-700">
+    <header className="bg-slate-900/80 backdrop-blur-sm border-b border-slate-800">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
             <div className="text-2xl font-bold text-white">
-              Doc<span className="text-cyan-400">Gen</span>
+              Doc<span className="text-purple-400">Gen</span>
             </div>
           </div>
 
@@ -36,7 +36,7 @@ export const Header = () => {
             <button className="text-slate-300 hover:text-white transition-colors">
               Sign In
             </button>
-            <button className="bg-cyan-500 hover:bg-cyan-600 text-white px-6 py-2 rounded-lg font-medium transition-colors">
+            <button className="bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white px-6 py-2 rounded-lg font-medium transition-all">
               Get Started
             </button>
           </div>
@@ -52,7 +52,7 @@ export const Header = () => {
         </div>
 
         {isMobileMenuOpen && (
-          <div className="md:hidden py-4 border-t border-slate-700">
+          <div className="md:hidden py-4 border-t border-slate-800">
             <div className="flex flex-col space-y-3">
               <a href="#" className="text-slate-300 hover:text-white transition-colors">
                 Features
@@ -69,11 +69,11 @@ export const Header = () => {
               <a href="#" className="text-slate-300 hover:text-white transition-colors">
                 Workspace
               </a>
-              <div className="pt-3 border-t border-slate-700">
+              <div className="pt-3 border-t border-slate-800">
                 <button className="text-slate-300 hover:text-white transition-colors mb-2 block">
                   Sign In
                 </button>
-                <button className="bg-cyan-500 hover:bg-cyan-600 text-white px-6 py-2 rounded-lg font-medium transition-colors">
+                <button className="bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white px-6 py-2 rounded-lg font-medium transition-all">
                   Get Started
                 </button>
               </div>

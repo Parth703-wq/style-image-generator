@@ -19,12 +19,12 @@ export const ManualInput = () => {
   };
 
   return (
-    <div className="bg-slate-800 rounded-xl p-8 shadow-xl">
+    <div className="bg-slate-800/50 backdrop-blur-sm rounded-xl p-8 shadow-xl border border-slate-700">
       <div className="flex items-center justify-between mb-6">
         <h2 className="text-2xl font-semibold text-white">Code Input</h2>
         <button
           onClick={handleGenerate}
-          className="bg-cyan-500 hover:bg-cyan-600 text-white px-6 py-2 rounded-lg font-medium transition-colors"
+          className="bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white px-6 py-2 rounded-lg font-medium transition-all"
         >
           Generate Documentation
         </button>
@@ -36,7 +36,7 @@ export const ManualInput = () => {
             value={code}
             onChange={handleCodeChange}
             placeholder="Paste your code here..."
-            className="w-full h-96 bg-slate-700 border border-slate-600 rounded-lg px-4 py-3 text-white placeholder-slate-400 font-mono text-sm leading-6 resize-none focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:border-transparent transition-all"
+            className="w-full h-96 bg-slate-700/50 border border-slate-600 rounded-lg px-4 py-3 text-white placeholder-slate-400 font-mono text-sm leading-6 resize-none focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all"
             style={{ fontSize: '14px', lineHeight: '1.5' }}
           />
         </div>
