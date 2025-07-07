@@ -53,11 +53,8 @@ export const GitHubRepository = () => {
             value={repositoryUrl}
             onChange={(e) => setRepositoryUrl(e.target.value)}
             placeholder="https://github.com/username/repository"
-            className="w-full border border-slate-500 rounded-lg px-4 py-3 text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:border-transparent transition-all"
-            style={{ 
-              backgroundColor: '#1e293b',
-              focusRingColor: '#8b5cf6'
-            }}
+            className="w-full border border-slate-500 rounded-lg px-4 py-3 text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all"
+            style={{ backgroundColor: '#1e293b' }}
           />
         </div>
 
